@@ -232,6 +232,138 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/20/2018-07-19_Python_ch2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vijing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MY BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/20/2018-07-19_Python_ch2/" itemprop="url">Basic Syntax [基本語法]-習題</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-20T00:10:03+08:00">
+                2018-07-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Basic-Syntax-基本語法-習題"><a href="#Basic-Syntax-基本語法-習題" class="headerlink" title="Basic Syntax [基本語法]-習題"></a>Basic Syntax [基本語法]-習題</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 習題1</span></span><br><span class="line"><span class="comment"># 請輸出以下詩 並利用"\t"與"\n"</span></span><br><span class="line"><span class="comment"># &gt;&gt;&gt;</span></span><br><span class="line"><span class="comment"># 登幽州臺歌               陳子昂</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 前不見古人               後不見來者</span></span><br><span class="line"><span class="comment"># 念天地之悠悠           獨愴然而涕下</span></span><br><span class="line"><span class="comment"># &gt;&gt;&gt;</span></span><br><span class="line">print(<span class="string">"登幽州臺歌\t陳子昂\n"</span>)</span><br><span class="line">print(<span class="string">"前不見古人\t後不見來者"</span>)</span><br><span class="line">print(<span class="string">"念天地之悠悠\t獨愴然而涕下"</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>登幽州臺歌    陳子昂
+
+前不見古人    後不見來者
+念天地之悠悠    獨愴然而涕下
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 習題2</span></span><br><span class="line"><span class="comment"># 請撰寫一程式，讓使用者可以分別輸入2位同學的名稱及分數，輸出結果並如下排列： (斜體部分為執行程式時輸入)</span></span><br><span class="line"><span class="comment"># &gt;&gt;&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 請輸入A同學姓名:Name_A</span></span><br><span class="line"><span class="comment"># 請輸入A同學分數:90</span></span><br><span class="line"><span class="comment"># 請輸入B同學姓名:Name_B</span></span><br><span class="line"><span class="comment"># 請輸入B同學分數:80</span></span><br><span class="line"><span class="comment"># 姓名             分數</span></span><br><span class="line"><span class="comment"># Name_A     90</span></span><br><span class="line"><span class="comment"># Name_B     80</span></span><br><span class="line"><span class="comment"># &gt;&gt;&gt;</span></span><br><span class="line">a1 = input(<span class="string">"请输入A同学的名字："</span>)</span><br><span class="line">a2 = int(input(<span class="string">"请输入A同学分数："</span>))</span><br><span class="line">b1 = input(<span class="string">"请输入B同学的名字："</span>)</span><br><span class="line">b2 = int(input(<span class="string">"请输入B同学分数："</span>))</span><br><span class="line">print(<span class="string">"姓名\t分数"</span>)</span><br><span class="line">print(<span class="string">"&#123;&#125;\t&#123;&#125;"</span>.format(a1,a2))</span><br><span class="line">print(<span class="string">"&#123;&#125;\t&#123;&#125;"</span>.format(b1,b2))</span><br></pre></td></tr></table></figure>
+<pre><code>请输入A同学的名字：Name_A
+请输入A同学分数：90
+请输入B同学的名字：Name_B
+请输入B同学分数：80
+姓名    分数
+Name_A    90
+Name_B    80
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/17/第一章Python3和Python2的区别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1211,7 +1343,7 @@ TypeError: &apos;&lt;&apos; not supported between instances of &apos;int&apos; a
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
