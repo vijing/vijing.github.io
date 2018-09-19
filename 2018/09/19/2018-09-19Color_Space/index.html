@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="近段时间开始接触linux，在此记录一些常用的linux命令。 cp 用于复制文件和目录语法：    cp [options]  sourcedir    destdir参数说明：–a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。–d：复制时保留链接。这里所说的链接相当于Windows系统中的快捷方式。-f：覆盖已经存在的目标文件而不给出提示">
+<meta name="description" content="颜色空间我们经常看到RGB,YUV,HSL,Lab等这些名词来描述颜色，那么这些名词之间有怎样的具体又是指什么东西呢？RGB,CMYK,HSL,Lab,YUV这些属于颜色空间，颜色空间，简单来说就是颜色在不同的应用场景和应用背景的表示方式。 RGBRGB主要应用于显示器系统，彩色阴极射线管,彩色光栅图形的显示器，也就是说RGB面向硬件。RGB又分为Adobe RGB和sRGB,AdobeRGB能表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux常用命令">
-<meta property="og:url" content="http://yoursite.com/2018/05/31/2018-05-31_linux_command/index.html">
+<meta property="og:title" content="颜色空间">
+<meta property="og:url" content="http://yoursite.com/2018/09/19/2018-09-19Color_Space/index.html">
 <meta property="og:site_name" content="MY BLOG">
-<meta property="og:description" content="近段时间开始接触linux，在此记录一些常用的linux命令。 cp 用于复制文件和目录语法：    cp [options]  sourcedir    destdir参数说明：–a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。–d：复制时保留链接。这里所说的链接相当于Windows系统中的快捷方式。-f：覆盖已经存在的目标文件而不给出提示">
+<meta property="og:description" content="颜色空间我们经常看到RGB,YUV,HSL,Lab等这些名词来描述颜色，那么这些名词之间有怎样的具体又是指什么东西呢？RGB,CMYK,HSL,Lab,YUV这些属于颜色空间，颜色空间，简单来说就是颜色在不同的应用场景和应用背景的表示方式。 RGBRGB主要应用于显示器系统，彩色阴极射线管,彩色光栅图形的显示器，也就是说RGB面向硬件。RGB又分为Adobe RGB和sRGB,AdobeRGB能表">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-31T15:39:17.755Z">
+<meta property="og:updated_time" content="2018-09-19T15:55:52.105Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux常用命令">
-<meta name="twitter:description" content="近段时间开始接触linux，在此记录一些常用的linux命令。 cp 用于复制文件和目录语法：    cp [options]  sourcedir    destdir参数说明：–a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。–d：复制时保留链接。这里所说的链接相当于Windows系统中的快捷方式。-f：覆盖已经存在的目标文件而不给出提示">
+<meta name="twitter:title" content="颜色空间">
+<meta name="twitter:description" content="颜色空间我们经常看到RGB,YUV,HSL,Lab等这些名词来描述颜色，那么这些名词之间有怎样的具体又是指什么东西呢？RGB,CMYK,HSL,Lab,YUV这些属于颜色空间，颜色空间，简单来说就是颜色在不同的应用场景和应用背景的表示方式。 RGBRGB主要应用于显示器系统，彩色阴极射线管,彩色光栅图形的显示器，也就是说RGB面向硬件。RGB又分为Adobe RGB和sRGB,AdobeRGB能表">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/31/2018-05-31_linux_command/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/19/2018-09-19Color_Space/"/>
 
 
 
 
 
-  <title>Linux常用命令 | MY BLOG</title>
+  <title>颜色空间 | MY BLOG</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/31/2018-05-31_linux_command/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/19/2018-09-19Color_Space/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="vijing">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux常用命令</h1>
+          <h1 class="post-title" itemprop="name headline">颜色空间</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-31T23:39:17+08:00">
-                2018-05-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-19T23:54:31+08:00">
+                2018-09-19
               </time>
             
 
@@ -299,8 +299,17 @@
       
 
       
-        <p>近段时间开始接触linux，在此记录一些常用的linux命令。</p>
-<h3 id="cp-用于复制文件和目录"><a href="#cp-用于复制文件和目录" class="headerlink" title="cp 用于复制文件和目录"></a>cp 用于复制文件和目录</h3><p>语法：<br>    cp [options]  sourcedir    destdir<br>参数说明：<br>–a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。<br>–d：复制时保留链接。这里所说的链接相当于Windows系统中的快捷方式。<br>-f：覆盖已经存在的目标文件而不给出提示。<br>-i：与-f选项相反，在覆盖目标文件之前给出提示，要求用户确认是否覆盖，回答”y”时目标文件将被覆盖。<br>-p：除复制文件的内容外，还把修改时间和访问权限也复制到新文件中。<br>-r：若给出的源文件是一个目录文件，此时将复制该目录下所有的子目录和文件。<br>-l：不复制文件，只是生成链接文件。</p>
+        <h2 id="颜色空间"><a href="#颜色空间" class="headerlink" title="颜色空间"></a>颜色空间</h2><p>我们经常看到RGB,YUV,HSL,Lab等这些名词来描述颜色，那么这些名词之间有怎样的具体又是指什么东西呢？<br>RGB,CMYK,HSL,Lab,YUV这些属于颜色空间，颜色空间，简单来说就是颜色在不同的应用场景和应用背景的表示方式。</p>
+<h4 id="RGB"><a href="#RGB" class="headerlink" title="RGB"></a>RGB</h4><p>RGB主要应用于显示器系统，彩色阴极射线管,彩色光栅图形的显示器，也就是说RGB面向硬件。<br>RGB又分为Adobe RGB和sRGB,AdobeRGB能表示的范围要大一些。就是说如果你使用8位JPG文件，你最好使用sRGB。如果你使用16位文件，可能选择Adobe RGB更合适。  </p>
+<h4 id="CMYK"><a href="#CMYK" class="headerlink" title="CMYK"></a>CMYK</h4><p>CMYK(cyan,magenta,yellow)颜色空间应用于印刷工业,印刷业通过青(C)、品(M)、黄(Y)三原色油墨的不同 网点面积率的叠印来表现丰富多彩的颜色和阶调，这便是三原色的CMY颜色空间。实际印刷中，一般采用青 (C)、品(M)、黄(Y)、黑(BK)四色印刷，在印刷的中间调至暗调增加黑版。</p>
+<h4 id="HSV"><a href="#HSV" class="headerlink" title="HSV"></a>HSV</h4><p>RGB和CMY颜色模型都是面向硬件的，而HSV（Hue Saturation Value）颜色模型是面向用户的。<br>这个模型中颜色的参数分别是：色调（H：hue），饱和度（S：saturation），亮度（V：value）。这是根据人观察色彩的生理特征而提出的颜色模型（人的视觉系统对亮度的敏感度要强于色彩值，这也是为什么计算机视觉中通常使用灰度即亮度图像来处理的原因之一）<br> HSV模型的三维表示从RGB立方体演化而来。设想从RGB沿立方体对角线的白色顶点向黑色顶点观察，就可以看到立方体的六边形外形。六边形边界表示色彩，水平轴表示纯度，明度沿垂直轴测量。与加法减法混色的术语相比，使用色相，饱和度等概念描述色彩更自然直观。</p>
+<h4 id="Lab"><a href="#Lab" class="headerlink" title="Lab"></a>Lab</h4><p>Lab颜色被设计来接近人类视觉。它致力于感知均匀性，它的L分量密切匹配人类亮度感知。因此可以被用来通过修改a和b分量的输出色阶来做精确的颜色平衡，或使用L分量来调整亮度对比。<br>Lab颜色空间是由CIE(国际照明委员会)制定的一种色彩模式。自然界中任何一点色都可以在Lab空间中表达出来，它的色彩空间比RGB空间还要大。另外，这种模式是以数字化方式来描述人的视觉感应， 与设备无关，所以它弥补了RGB和CMYK模式必须依赖于设备色彩特性的不足。</p>
+<h4 id="YUV"><a href="#YUV" class="headerlink" title="YUV"></a>YUV</h4><p> YUV色彩空间的重要性是它的亮度信号Y和色度信号U、V是分离的。如果只有Y信号分量而没有U、V分量， 那么这样表示的图就是黑白灰度图。彩色电视采用YUV空间正是为了用亮度信号Y解决彩色电视机与黑白电视机 的兼容问题，使黑白电视机也能接收彩色信号。<br> YUV是通过亮度-色差来描述颜色的颜色空间。<br> 亮度信号经常被称作Y，色度信号是由两个互相独立的信号组成。视颜色系统和格式不同，两种色度信号经常被称作UV或PbPr或CbCr。这些都是由不同的编码格式所产生的，但是实际上，他们的概念基本相同。在DVD中，色度信号被存储成Cb和Cr（C代表颜色，b代表蓝色，r代表红色）<br> YUV颜色空间是从RGB颜色空间推导而来。<br> RGB和YUV的换算公式如下：  </p>
+<blockquote>
+<pre><code>Y =  0.299 R&apos; + 0.587 G&apos; + 0.114 B&apos;  
+U = -0.147 R&apos; 0.289 G&apos; + 0.436 B&apos; = 0.492(B&apos;- Y)  
+V =  0.615 R&apos; 0.289 G&apos; + 0.436 B&apos; = 0.877(R&apos;- Y)
+</code></pre></blockquote>
 
       
     </div>
@@ -325,8 +334,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/29/2018-05-29_vim/" rel="next" title="Vim使用">
-                <i class="fa fa-chevron-left"></i> Vim使用
+              <a href="/2018/08/21/2018-08-21_Python实现ssh登录/" rel="next" title="python实现ssh远程登录">
+                <i class="fa fa-chevron-left"></i> python实现ssh远程登录
               </a>
             
           </div>
@@ -334,10 +343,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/17/第一章Python3和Python2的区别/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,7 +456,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#cp-用于复制文件和目录"><span class="nav-number">1.</span> <span class="nav-text">cp 用于复制文件和目录</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#颜色空间"><span class="nav-number">1.</span> <span class="nav-text">颜色空间</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RGB"><span class="nav-number">1.0.1.</span> <span class="nav-text">RGB</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CMYK"><span class="nav-number">1.0.2.</span> <span class="nav-text">CMYK</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HSV"><span class="nav-number">1.0.3.</span> <span class="nav-text">HSV</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Lab"><span class="nav-number">1.0.4.</span> <span class="nav-text">Lab</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#YUV"><span class="nav-number">1.0.5.</span> <span class="nav-text">YUV</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
