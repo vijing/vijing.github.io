@@ -232,6 +232,164 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/29/2018-05-29_vim/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vijing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MY BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/29/2018-05-29_vim/" itemprop="url">Vim使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-29T00:06:12+08:00">
+                2018-05-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>VIM是Linux下面自带的文本编辑器，用处广泛，但是比较难学。本文记录使用vim过程常用的命令，遇到的问题和使用心得。</p>
+<h3 id="Ubuntu上的vim"><a href="#Ubuntu上的vim" class="headerlink" title="Ubuntu上的vim"></a>Ubuntu上的vim</h3><ul>
+<li>ubuntu上,缺省安装的是不完全的vim，在输入模式（Insert mode）使用方向键会出现A,B,C,D。</li>
+<li>解决方法：安装完全的vim,命令：1.<code>sudo apt-get update</code> 2.<code>sudo apt-get install vim</code></li>
+</ul>
+<hr>
+<h3 id="vim介绍"><a href="#vim介绍" class="headerlink" title="vim介绍"></a>vim介绍</h3><p>基本上 vi 共分为三种模式，分别是『一般模式』、『编辑模式』与『指令列命令模式』。 这三种模式的作用分别是：</p>
+<ul>
+<li>一般模式：<br>以 vi 打开一个档案就直接进入一般模式了(这是默认的模式)。在这个模式中， 你可以使用『上下左右』按键来移动光标，你可以使用『删除字符』或『删除整行』来处理档案内容， 也可以使用『复制、贴上』来处理你的文件数据。</li>
+</ul>
+<ul>
+<li>编辑模式：<br>在一般模式中可以进行删除、复制、贴上等等的动作，但是却无法编辑文件内容的！ 要等到你按下『i, I, o, O, a, A, r, R』等任何一个字母之后才会进入编辑模式。注意了！通常在 Linux 中，按下这些按键时，在画面的左下方会出现『 INSERT 或 REPLACE 』的字样，此时才可以进行编辑。而如果要回到一般模式时， 则必须要按下『Esc』这个按键即可退出编辑模式。</li>
+</ul>
+<ul>
+<li>指令列命令模式：<br>在一般模式当中，输入『 : / ? 』三个中的任何一个按钮，就可以将光标移动到最底下那一行。在这个模式当中， 可以提供你『搜寻资料』的动作，而读取、存盘、大量取代字符、离开 vi 、显示行号等等的动作则是在此模式中达成的！</li>
+</ul>
+<p><br>简单的说，我们可以将这三个模式想成底下的图标来表示：<img src="http://cn.linux.vbird.org/linux_basic/0310vi_files/vi-mode.gif" alt=""><br>一般模式可与编辑模式及指令列模式切换， 但编辑模式与指令列模式之间不可互相切换(此段出处<a href="http://cn.linux.vbird.org/linux_basic/0310vi.php" target="_blank" rel="noopener">http://cn.linux.vbird.org/linux_basic/0310vi.php</a>)</p>
+<h3 id="Vim常用命令"><a href="#Vim常用命令" class="headerlink" title="Vim常用命令"></a>Vim常用命令</h3><h4 id="移动光标的方法"><a href="#移动光标的方法" class="headerlink" title="移动光标的方法"></a>移动光标的方法</h4><ol>
+<li>[Ctrl] + [f]：屏幕『向下』移动一页，相当于 [Page Down]按键 (常用)</li>
+<li>[Ctrl] + [b]：屏幕『向上』移动一页，相当于 [Page Up] 按键 (常用)</li>
+<li>0 或功能键[Home]：这是数字『 0 』：移动到这一行的最前面字符处 (常用)</li>
+<li>$ 或功能键[End]：移动到这一行的最后面字符处(常用)</li>
+<li>G：    移动到这个档案的最后一行(常用)</li>
+<li>gg： 移动到这个档案的第一行，相当于 1G 啊！ (常用)</li>
+<li>n<enter>：n 为数字。光标向下移动 n 行(常用)<h4 id="搜寻与取代"><a href="#搜寻与取代" class="headerlink" title="搜寻与取代"></a>搜寻与取代</h4></enter></li>
+<li>/word：向光标之下寻找一个名称为 word 的字符串。例如要在档案内搜寻 vbird 这个字符串，就输入 /vbird 即可！ (常用)</li>
+<li>:n1,n2s/word1/word2/g：n1 与 n2 为数字。在第 n1 与 n2 行之间寻找 word1 这个字符串，并将该字符串取代为 word2 ！举例来说，在 100 到 200 行之间搜寻 vbird 并取代为 VBIRD 则：『:100,200s/vbird/VBIRD/g』。(常用)</li>
+<li>:1,$s/word1/word2/g：从第一行到最后一行寻找 word1 字符串，并将该字符串取代为 word2 ！(常用)</li>
+<li>:1,$s/word1/word2/gc：从第一行到最后一行寻找 word1 字符串，并将该字符串取代为 word2 ！且在取代前显示提示字符给用户确认 (confirm) 是否需要取代！(常用)<h4 id="删除、复制与贴上"><a href="#删除、复制与贴上" class="headerlink" title="删除、复制与贴上"></a>删除、复制与贴上</h4></li>
+<li>x, X：在一行字当中，x 为向后删除一个字符 (相当于 [del] 按键)， X 为向前删除一个字符(相当于 [backspace] 亦即是退格键) (常用)</li>
+<li>dd：删除游标所在的那一整列(常用)</li>
+<li>ndd：n 为数字。删除光标所在的向下 n 列，例如 20dd 则是删除 20 列 (常用)</li>
+<li>yy：复制游标所在的那一行(常用)</li>
+<li>nyy：n 为数字。复制光标所在的向下 n 列，例如 20yy 则是复制 20 列(常用)</li>
+<li>p, P：p 为将已复制的数据在光标下一行贴上，P 则为贴在游标上一行！ 举例来说，我目前光标在第 20 行，且已经复制了 10 行数据。则按下 p 后， 那 10 行数据会贴在原本的 20 行之后，亦即由 21 行开始贴。但如果是按下 P 呢？ 那么原本的第 20 行会被推到变成 30 行。 (常用)</li>
+<li>u：复原前一个动作。(常用)</li>
+<li>[Ctrl]+r：重做上一个动作。(常用)</li>
+<li>. :不要怀疑！这就是小数点！意思是重复前一个动作的意思。 如果你想要重复删除、重复贴上等等动作，按下小数点『.』就好了！ (常用)</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/28/2018-05-28_MTF_Chart_Size/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -783,7 +941,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
