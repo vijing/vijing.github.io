@@ -232,6 +232,140 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/14/2018-10-14_ Camera MTF测试/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vijing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/test.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MY BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/14/2018-10-14_ Camera MTF测试/" itemprop="url">Camera MTF测试</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-14T01:52:46+08:00">
+                2018-10-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>标签（空格分隔）： camera测试 工作总结</p>
+<hr>
+<h3 id="1-MTF介绍"><a href="#1-MTF介绍" class="headerlink" title="1.MTF介绍"></a>1.MTF介绍</h3><p>MTF（Modulation Transfer Function）模量传递函数。MTF是camera成像对比度和分辨率的综合表现。MTF反映的是镜头对被拍摄物体的再现能力。从另一个角度来看，camera成像过程可以简单看成下图：<br><img src="http://pgiocha2u.bkt.clouddn.com/MTF%E7%89%A9%E5%83%8F%E5%9B%BE.png" alt="MTF物像图"><br>简单来，物体经过camera系统之后形成图象。我们用Io表示物体表面的最大亮度与最小亮度的差，Ii表示图象最大亮度与最小亮度之差。那么MTF表征的量就是Ii/Io,如果是理想情况下，Ii等于Io, MTF的值就是等于1，但是在实际的成像系统中，这个是不可能发生的。同样的，在成像系统中，Ii的值不可能为0。所以说，MTF的值的范围为0～1.</p>
+<h3 id="2-camera-MTF测试方法"><a href="#2-camera-MTF测试方法" class="headerlink" title="2.camera MTF测试方法"></a>2.camera MTF测试方法</h3><p>一般来说，MTF测试的方法分为：</p>
+<ul>
+<li><p>1.用人眼来看，人眼来看的方法就是camera拍摄12233</p>
+<p>chart得到的图片中的黑白线对，看人眼可以辨识黑白线对的极限。这部分就不具体介绍了。</p>
+</li>
+<li><p>2.按照MTF的定义也就是最大亮度值减最小亮度值的差来求camera的MTF值。</p>
+</li>
+</ul>
+<p>具体如下：<br><img src="http://pgiocha2u.bkt.clouddn.com/MTFTest1.png" alt="MTF测试第一种方法"><br>使用上图做为camera拍摄的图卡，其中图中灰色部分为灰度值为0和灰度值为255的象素点间隔组成的图象。然后取红框部分区域进行计算，红框大小可根据实际情况来取。<br>计算公式：$$(Lmax-Lmin)/(Lmax+Lmin)$$，其中L为灰度值。通过这个公司就可以求出五个区域的MTF值。这种方法算法实现简单，但是误差会比较大。</p>
+<ul>
+<li>3.SFR方法<br>SFR(spatial frequency response)空间频率响是MTF的一种测试算法。 这次先简单介绍一下SFR的流程和怎样在Matheamtica实现，以后有时间再具体介绍其中的原理。<br>。。。未完成</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/13/title_ CCD和CMOS的区别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1452,135 +1586,6 @@ V =  0.615 R&apos; 0.289 G&apos; + 0.436 B&apos; = 0.877(R&apos;- Y)
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/21/2018-07-21_Python批量修改寄存器的值/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="vijing">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/test.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MY BLOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/21/2018-07-21_Python批量修改寄存器的值/" itemprop="url">Python批量修改寄存器的值</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-21T12:54:44+08:00">
-                2018-07-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>标签（空格分隔）： 原创 工作总结</p>
-<hr>
-<h3 id="Python批量修改寄存器的值"><a href="#Python批量修改寄存器的值" class="headerlink" title="Python批量修改寄存器的值"></a>Python批量修改寄存器的值</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在写代码过程中，我们修改代码中寄存器的值，但是有时寄存器的数据较多，手动修改容易出现错误而且花费的时间长</span></span><br><span class="line"><span class="comment"># 这是一段寄存器的配置值：</span></span><br><span class="line"><span class="comment"># 0x00, 0x34</span></span><br><span class="line"><span class="comment"># 0x35, 0x25</span></span><br><span class="line"><span class="comment"># 0x10, 0xd4</span></span><br><span class="line"><span class="comment"># 0xf5, 0xa5</span></span><br><span class="line"><span class="comment"># 0x00, 0x34</span></span><br><span class="line"><span class="comment"># 0x3a, 0xff</span></span><br><span class="line"><span class="comment"># 0x00, 0x00</span></span><br><span class="line"><span class="comment"># 0x34, 0x25</span></span><br><span class="line"><span class="comment"># 这是要修改代码的值：</span></span><br><span class="line"><span class="comment"># &#123;Data, 0x21, 0x23&#125;,</span></span><br><span class="line"><span class="comment"># &#123;Data, 0x34, 0x23&#125;,</span></span><br><span class="line"><span class="comment"># &#123;Data, 0xd1, 0x2a&#125;,</span></span><br><span class="line"><span class="comment"># &#123;Data, 0xe1, 0xc3&#125;,</span></span><br><span class="line"><span class="comment"># &#123;Data, 0x00, 0xff&#125;,</span></span><br><span class="line"><span class="comment"># &#123;Data, 0xef, 0x23&#125;,</span></span><br><span class="line"><span class="comment"># &#123;Data, 0xac, 0x00&#125;,</span></span><br><span class="line"><span class="comment"># &#123;Data, 0x25, 0x87&#125;,</span></span><br><span class="line"><span class="comment"># 首先将要修改的代码值存在test1.txt中，寄存器的配置值存在test2.txt中</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python实现的过程</span></span><br><span class="line"><span class="comment"># 引入必要的包</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#导入代码</span></span><br><span class="line">data = pd.read_csv(<span class="string">"G:/Test/test1.txt"</span>, header=<span class="keyword">None</span>)</span><br><span class="line"><span class="comment"># data</span></span><br><span class="line"><span class="comment"># 	0	1	2	3</span></span><br><span class="line"><span class="comment"># 0	&#123;Data	0x21	0x23&#125;	NaN</span></span><br><span class="line"><span class="comment"># 1	&#123;Data	0x34	0x23&#125;	NaN</span></span><br><span class="line"><span class="comment"># 2	&#123;Data	0xd1	0x2a&#125;	NaN</span></span><br><span class="line"><span class="comment"># 3	&#123;Data	0xe1	0xc3&#125;	NaN</span></span><br><span class="line"><span class="comment"># 4	&#123;Data	0x00	0xff&#125;	NaN</span></span><br><span class="line"><span class="comment"># 5	&#123;Data	0xef	0x23&#125;	NaN</span></span><br><span class="line"><span class="comment"># 6	&#123;Data	0xac	0x00&#125;	NaN</span></span><br><span class="line"><span class="comment"># 7	&#123;Data	0x25	0x87&#125;	NaN</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#导入寄存器配置值</span></span><br><span class="line">reg = pd.read_csv(<span class="string">"G:/Test/test2.txt"</span>, header = <span class="keyword">None</span>)</span><br><span class="line"><span class="comment"># reg</span></span><br><span class="line"><span class="comment"># 0	1</span></span><br><span class="line"><span class="comment"># 0	0x00	0x34</span></span><br><span class="line"><span class="comment"># 1	0x35	0x25</span></span><br><span class="line"><span class="comment"># 2	0x10	0xd4</span></span><br><span class="line"><span class="comment"># 3	0xf5	0xa5</span></span><br><span class="line"><span class="comment"># 4	0x00	0x34</span></span><br><span class="line"><span class="comment"># 5	0x3a	0xff</span></span><br><span class="line"><span class="comment"># 6	0x00	0x00</span></span><br><span class="line"><span class="comment"># 7	0x34	0x25</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 修改代码第二列值</span></span><br><span class="line">data[<span class="number">1</span>] = reg[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 因为代码里面第三列除了数值还有“&#125;”</span></span><br><span class="line">data[<span class="number">2</span>] = reg[<span class="number">1</span>] + <span class="string">"&#125;"</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 修改之后的代码数据</span></span><br><span class="line"><span class="comment"># data</span></span><br><span class="line"><span class="comment"># 	0	1	2	3</span></span><br><span class="line"><span class="comment"># 0	&#123;Data	0x00	0x34&#125;	NaN</span></span><br><span class="line"><span class="comment"># 1	&#123;Data	0x35	0x25&#125;	NaN</span></span><br><span class="line"><span class="comment"># 2	&#123;Data	0x10	0xd4&#125;	NaN</span></span><br><span class="line"><span class="comment"># 3	&#123;Data	0xf5	0xa5&#125;	NaN</span></span><br><span class="line"><span class="comment"># 4	&#123;Data	0x00	0x34&#125;	NaN</span></span><br><span class="line"><span class="comment"># 5	&#123;Data	0x3a	0xff&#125;	NaN</span></span><br><span class="line"><span class="comment"># 6	&#123;Data	0x00	0x00&#125;	NaN</span></span><br><span class="line"><span class="comment"># 7	&#123;Data	0x34	0x25&#125;	NaN</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 把修改之后的代码保存成txt文件</span></span><br><span class="line">data.to_csv(<span class="string">"G:/Test/result.txt"</span>,header = <span class="keyword">None</span>, index = <span class="keyword">None</span>)</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1635,7 +1640,7 @@ V =  0.615 R&apos; 0.289 G&apos; + 0.436 B&apos; = 0.877(R&apos;- Y)
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
