@@ -79,17 +79,19 @@
 
 
 
-<meta name="description" content="标签（空格分隔）： python   Basic Syntax [基本語法]-習題1234567891011# 習題1# 請輸出以下詩 並利用&quot;\t&quot;與&quot;\n&quot;# &amp;gt;&amp;gt;&amp;gt;# 登幽州臺歌               陳子昂# 前不見古人               後不見來者# 念天地之悠悠           獨愴然而涕下# &amp;gt;&amp;gt;&amp;gt;print(&quot;登幽州臺歌\t陳">
+<meta name="description" content="标签（空格分隔）： LCD  现在我们要在LCD上画一个点，我们无法直接对LCD屏进行操作。这时候就需要用到FrameBuffer,Linux可以FrameBuffer这个设备来供用户态进程实现直接写屏。首先我们先简单看一下linux的架构图：    用户程序无法直接操作硬件，frame buffer相当于一个中间人，接受用户程序送过来的数据，然后把数据显示在LCD上。注：framebuffer的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Basic Syntax [基本語法]-習題">
-<meta property="og:url" content="http://yoursite.com/2018/07/20/2018-07-19_Python_ch2/index.html">
+<meta property="og:title" content="frame buffer简单应用">
+<meta property="og:url" content="http://yoursite.com/2018/07/28/2018-07-28_framebuffer简单应用/index.html">
 <meta property="og:site_name" content="MY BLOG">
-<meta property="og:description" content="标签（空格分隔）： python   Basic Syntax [基本語法]-習題1234567891011# 習題1# 請輸出以下詩 並利用&quot;\t&quot;與&quot;\n&quot;# &amp;gt;&amp;gt;&amp;gt;# 登幽州臺歌               陳子昂# 前不見古人               後不見來者# 念天地之悠悠           獨愴然而涕下# &amp;gt;&amp;gt;&amp;gt;print(&quot;登幽州臺歌\t陳">
+<meta property="og:description" content="标签（空格分隔）： LCD  现在我们要在LCD上画一个点，我们无法直接对LCD屏进行操作。这时候就需要用到FrameBuffer,Linux可以FrameBuffer这个设备来供用户态进程实现直接写屏。首先我们先简单看一下linux的架构图：    用户程序无法直接操作硬件，frame buffer相当于一个中间人，接受用户程序送过来的数据，然后把数据显示在LCD上。注：framebuffer的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-13T05:54:21.123Z">
+<meta property="og:image" content="http://tingge.github.io/img/linux_kernel.jpg">
+<meta property="og:updated_time" content="2018-10-13T05:53:32.724Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Basic Syntax [基本語法]-習題">
-<meta name="twitter:description" content="标签（空格分隔）： python   Basic Syntax [基本語法]-習題1234567891011# 習題1# 請輸出以下詩 並利用&quot;\t&quot;與&quot;\n&quot;# &amp;gt;&amp;gt;&amp;gt;# 登幽州臺歌               陳子昂# 前不見古人               後不見來者# 念天地之悠悠           獨愴然而涕下# &amp;gt;&amp;gt;&amp;gt;print(&quot;登幽州臺歌\t陳">
+<meta name="twitter:title" content="frame buffer简单应用">
+<meta name="twitter:description" content="标签（空格分隔）： LCD  现在我们要在LCD上画一个点，我们无法直接对LCD屏进行操作。这时候就需要用到FrameBuffer,Linux可以FrameBuffer这个设备来供用户态进程实现直接写屏。首先我们先简单看一下linux的架构图：    用户程序无法直接操作硬件，frame buffer相当于一个中间人，接受用户程序送过来的数据，然后把数据显示在LCD上。注：framebuffer的">
+<meta name="twitter:image" content="http://tingge.github.io/img/linux_kernel.jpg">
 
 
 
@@ -119,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/20/2018-07-19_Python_ch2/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/28/2018-07-28_framebuffer简单应用/"/>
 
 
 
 
 
-  <title>Basic Syntax [基本語法]-習題 | MY BLOG</title>
+  <title>frame buffer简单应用 | MY BLOG</title>
   
 
 
@@ -232,7 +234,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/20/2018-07-19_Python_ch2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/28/2018-07-28_framebuffer简单应用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="vijing">
@@ -249,7 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Basic Syntax [基本語法]-習題</h1>
+          <h1 class="post-title" itemprop="name headline">frame buffer简单应用</h1>
         
 
         <div class="post-meta">
@@ -261,8 +263,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-20T00:10:03+08:00">
-                2018-07-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-28T00:01:39+08:00">
+                2018-07-28
               </time>
             
 
@@ -299,22 +301,14 @@
       
 
       
-        <p>标签（空格分隔）： python </p>
+        <p>标签（空格分隔）： LCD</p>
 <hr>
-<h2 id="Basic-Syntax-基本語法-習題"><a href="#Basic-Syntax-基本語法-習題" class="headerlink" title="Basic Syntax [基本語法]-習題"></a>Basic Syntax [基本語法]-習題</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 習題1</span></span><br><span class="line"><span class="comment"># 請輸出以下詩 並利用"\t"與"\n"</span></span><br><span class="line"><span class="comment"># &gt;&gt;&gt;</span></span><br><span class="line"><span class="comment"># 登幽州臺歌               陳子昂</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 前不見古人               後不見來者</span></span><br><span class="line"><span class="comment"># 念天地之悠悠           獨愴然而涕下</span></span><br><span class="line"><span class="comment"># &gt;&gt;&gt;</span></span><br><span class="line">print(<span class="string">"登幽州臺歌\t陳子昂\n"</span>)</span><br><span class="line">print(<span class="string">"前不見古人\t後不見來者"</span>)</span><br><span class="line">print(<span class="string">"念天地之悠悠\t獨愴然而涕下"</span>)</span><br></pre></td></tr></table></figure>
-<pre><code>登幽州臺歌    陳子昂
+<p>现在我们要在LCD上画一个点，我们无法直接对LCD屏进行操作。这时候就需要用到FrameBuffer,Linux可以FrameBuffer这个设备来供用<br>户态进程实现直接写屏。<br>首先我们先简单看一下linux的架构图：</p>
+<hr>
+<p><img src="http://tingge.github.io/img/linux_kernel.jpg" alt="linux系统结构"></p>
+<hr>
+<p>用户程序无法直接操作硬件，frame buffer相当于一个中间人，接受用户程序送过来的数据，然后把数据显示在LCD上。<br>注：framebuffer的设备文件一般是 /dev/fb0、/dev/fb1等，所有的这些操作，都是在控制台界面下，root登录<br>可参考下列链接：<br><a href="http://www.wxtlife.com/2017/06/07/Android-framebuffer/" title="framebuffer介绍" target="_blank" rel="noopener">http://www.wxtlife.com/2017/06/07/Android-framebuffer/</a></p>
 
-前不見古人    後不見來者
-念天地之悠悠    獨愴然而涕下
-</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 習題2</span></span><br><span class="line"><span class="comment"># 請撰寫一程式，讓使用者可以分別輸入2位同學的名稱及分數，輸出結果並如下排列： (斜體部分為執行程式時輸入)</span></span><br><span class="line"><span class="comment"># &gt;&gt;&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 請輸入A同學姓名:Name_A</span></span><br><span class="line"><span class="comment"># 請輸入A同學分數:90</span></span><br><span class="line"><span class="comment"># 請輸入B同學姓名:Name_B</span></span><br><span class="line"><span class="comment"># 請輸入B同學分數:80</span></span><br><span class="line"><span class="comment"># 姓名             分數</span></span><br><span class="line"><span class="comment"># Name_A     90</span></span><br><span class="line"><span class="comment"># Name_B     80</span></span><br><span class="line"><span class="comment"># &gt;&gt;&gt;</span></span><br><span class="line">a1 = input(<span class="string">"请输入A同学的名字："</span>)</span><br><span class="line">a2 = int(input(<span class="string">"请输入A同学分数："</span>))</span><br><span class="line">b1 = input(<span class="string">"请输入B同学的名字："</span>)</span><br><span class="line">b2 = int(input(<span class="string">"请输入B同学分数："</span>))</span><br><span class="line">print(<span class="string">"姓名\t分数"</span>)</span><br><span class="line">print(<span class="string">"&#123;&#125;\t&#123;&#125;"</span>.format(a1,a2))</span><br><span class="line">print(<span class="string">"&#123;&#125;\t&#123;&#125;"</span>.format(b1,b2))</span><br></pre></td></tr></table></figure>
-<pre><code>请输入A同学的名字：Name_A
-请输入A同学分数：90
-请输入B同学的名字：Name_B
-请输入B同学分数：80
-姓名    分数
-Name_A    90
-Name_B    80
-</code></pre>
       
     </div>
     
@@ -338,8 +332,8 @@ Name_B    80
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/31/2018-05-31_linux_command/" rel="next" title="Linux常用命令">
-                <i class="fa fa-chevron-left"></i> Linux常用命令
+              <a href="/2018/07/21/2018-07-21_Python批量修改寄存器的值/" rel="next" title="Python批量修改寄存器的值">
+                <i class="fa fa-chevron-left"></i> Python批量修改寄存器的值
               </a>
             
           </div>
@@ -348,8 +342,8 @@ Name_B    80
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/21/2018-07-21_Python批量修改寄存器的值/" rel="prev" title="Python批量修改寄存器的值">
-                Python批量修改寄存器的值 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/29/2018-07-29_数据可视化方法/" rel="prev" title="数据可视化方法">
+                数据可视化方法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -402,17 +396,8 @@ Name_B    80
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -454,22 +439,6 @@ Name_B    80
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Syntax-基本語法-習題"><span class="nav-number">1.</span> <span class="nav-text">Basic Syntax [基本語法]-習題</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
