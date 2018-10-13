@@ -251,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/13/2018-10-13_Camera测试之Color & Lens shading Test/" itemprop="url">英语简单句类型</a></h1>
+                <a class="post-title-link" href="/2018/10/13/2018-10-13_Camera测试之Color & Lens shading Test/" itemprop="url">Camera测试之Color & Lens shading Test</a></h1>
         
 
         <div class="post-meta">
@@ -376,7 +376,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/13/2018-10-13_Color&Lens shading测试图卡位置检测/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2018/10/13/2018-10-13_Color&Lens shading测试图卡位置检测/" itemprop="url">Color&Lens shading测试图卡位置检测</a></h1>
         
 
         <div class="post-meta">
@@ -428,8 +428,7 @@
       
         
           
-            <hr>
-<h2 id="title-Color-amp-Lens-shading测试图卡位置检测"><a href="#title-Color-amp-Lens-shading测试图卡位置检测" class="headerlink" title="title:Color&amp;Lens shading测试图卡位置检测"></a>title:Color&amp;Lens shading测试图卡位置检测</h2><p>标签（空格分隔）： 原创 工作总结</p>
+            <p>标签（空格分隔）： 原创 工作总结</p>
 <hr>
 <p>进行测试之前，最重要的一步就是确保测试环境是正常的。对于camera测试来说，测试之前很重要的一步就是要确保camera和图卡的位置是正确的。在实际产测中，如果每个DUT测试之前都需要人去确认camera和图卡的位置是否符合要求，则会消耗大量的人力物力。所以需要写一个程序在开始测试之前判断camera和图卡的位置是否正确，如果正确则开始测试。如果错误则停止测试。因为在同一个工站可能会测试camera的两个测试项，例如同时测试camera的MTF和Color&amp;Lensshading。这样的话测试过程中则需要转换图卡。转换图卡的过程中可能会出现错误意外。<br>首先我们先分析一下图卡切换到位和切换不到位情况拍摄的图片有什么不同。<br><img src="http://pgiocha2u.bkt.clouddn.com/%E5%9B%BE%E5%8D%A1%E6%AD%A3%E7%A1%AE.png" alt="图卡位置正确"><br>图卡位置正确<br><img src="http://pgiocha2u.bkt.clouddn.com/%E5%9B%BE%E5%8D%A1%E6%AD%A3%E7%A1%AE%E7%9B%B4%E6%96%B9%E5%9B%BE.png" alt="图卡位置正确灰度直方图"><br>图卡位置正确灰度直方图<br><img src="http://pgiocha2u.bkt.clouddn.com/%E5%9B%BE%E5%8D%A1%E9%94%99%E8%AF%AF.png" alt="图卡位置错误"><br>图卡位置错误<br><img src="http://pgiocha2u.bkt.clouddn.com/%E5%9B%BE%E5%8D%A1%E9%94%99%E8%AF%AF%E7%9B%B4%E6%96%B9%E5%9B%BE.png" alt="图卡位置错误灰度直方图"><br>图卡位置错误灰度直方图</p>
 <p>图卡位置正确和图卡位置错误灰度值灰度直方图分布有差异，可用一阈值进行二值化<br>处理流程如下：</p>
