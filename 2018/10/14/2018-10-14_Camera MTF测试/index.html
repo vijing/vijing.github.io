@@ -87,8 +87,8 @@
 <meta property="og:description" content="标签（空格分隔）： camera测试 工作总结  1.MTF介绍MTF（Modulation Transfer Function）模量传递函数。MTF是camera成像对比度和分辨率的综合表现。MTF反映的是镜头对被拍摄物体的再现能力。从另一个角度来看，camera成像过程可以简单看成下图：简单来，物体经过camera系统之后形成图象。我们用Io表示物体表面的最大亮度与最小亮度的差，Ii表示图象最">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/MTF%E7%89%A9%E5%83%8F%E5%9B%BE.png">
-<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/MTFTest1.png">
-<meta property="og:updated_time" content="2018-10-15T13:13:38.575Z">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/MTFTest2.png">
+<meta property="og:updated_time" content="2018-10-15T13:41:43.785Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Camera MTF测试">
 <meta name="twitter:description" content="标签（空格分隔）： camera测试 工作总结  1.MTF介绍MTF（Modulation Transfer Function）模量传递函数。MTF是camera成像对比度和分辨率的综合表现。MTF反映的是镜头对被拍摄物体的再现能力。从另一个角度来看，camera成像过程可以简单看成下图：简单来，物体经过camera系统之后形成图象。我们用Io表示物体表面的最大亮度与最小亮度的差，Ii表示图象最">
@@ -313,7 +313,7 @@
 <li><p>2.按照MTF的定义也就是最大亮度值减最小亮度值的差来求camera的MTF值。</p>
 </li>
 </ul>
-<p>具体如下：<br><img src="http://pgiocha2u.bkt.clouddn.com/MTFTest1.png" alt="MTF测试第一种方法"><br>使用上图做为camera拍摄的图卡，其中图中灰色部分为灰度值为0和灰度值为255的象素点间隔组成的图象。然后取红框部分区域进行计算，红框大小可根据实际情况来取。<br>计算公式：$$(Lmax-Lmin)/(Lmax+Lmin)$$，其中L为灰度值。通过这个公司就可以求出五个区域的MTF值。这种方法算法实现简单，但是误差会比较大。</p>
+<p>具体如下：<br><img src="http://pgiocha2u.bkt.clouddn.com/MTFTest2.png" alt="MTF测试第一种方法"><br>使用上图做为camera拍摄的图卡，其中图中灰色部分为灰度值为0和灰度值为255的象素点间隔组成的图象。然后取红框部分区域进行计算，红框大小可根据实际情况来取。<br>计算公式：$$(Lmax-Lmin)/(Lmax+Lmin)$$，其中L为灰度值。通过这个公司就可以求出五个区域的MTF值。这种方法算法实现简单，但是误差会比较大。</p>
 <ul>
 <li>3.SFR方法<br>SFR(spatial frequency response)空间频率响是MTF的一种测试算法。 这次先简单介绍一下SFR的流程和怎样在Matheamtica实现，以后有时间再具体介绍其中的原理。<br>。。。未完成</li>
 </ul>
