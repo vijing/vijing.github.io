@@ -79,20 +79,27 @@
 
 
 
-<meta name="description" content="标签（空格分隔）： 原创 工作总结 camera  1.Imatest Chart Finder计算图卡大小测试camera MTF时，需要知道所需要的图卡的大小，Imatest提供了一个网页，只要输入sensor的像素，镜头的视场角，还有镜头到图卡的距离就可以得出图卡的大小。网页链接Imatest Chart  Finder。下图为两百万像素sensor，和视场角为74.5度的镜头，最小物距为0">
+<meta name="description" content="标签（空格分隔）： camera测试 工作总结测试目的： camera对色彩的还原能力测试主要设备： 24色色卡，灯箱测试环境： 1.D65/CW/A光源，照度为600±100lux,整个chart表面的亮度值相差小于10%2.D65光源，照度为20lux,整个chart的表面的亮度相差小于15%测试注意事项： 24色卡位于预览画面的中心，大小占整个画面的70%测试原理：在硬件电子系统中，也就是我">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MTF测试图卡规格">
-<meta property="og:url" content="http://yoursite.com/2018/05/28/2018-05-28_MTF_Chart_Size/index.html">
+<meta property="og:title" content="camera测试之颜色还原">
+<meta property="og:url" content="http://yoursite.com/2018/10/15/2018-10-15_camera测试之颜色还原/index.html">
 <meta property="og:site_name" content="MY BLOG">
-<meta property="og:description" content="标签（空格分隔）： 原创 工作总结 camera  1.Imatest Chart Finder计算图卡大小测试camera MTF时，需要知道所需要的图卡的大小，Imatest提供了一个网页，只要输入sensor的像素，镜头的视场角，还有镜头到图卡的距离就可以得出图卡的大小。网页链接Imatest Chart  Finder。下图为两百万像素sensor，和视场角为74.5度的镜头，最小物距为0">
+<meta property="og:description" content="标签（空格分隔）： camera测试 工作总结测试目的： camera对色彩的还原能力测试主要设备： 24色色卡，灯箱测试环境： 1.D65/CW/A光源，照度为600±100lux,整个chart表面的亮度值相差小于10%2.D65光源，照度为20lux,整个chart的表面的亮度相差小于15%测试注意事项： 24色卡位于预览画面的中心，大小占整个画面的70%测试原理：在硬件电子系统中，也就是我">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://p9fx6f3uf.bkt.clouddn.com/chartfinder.jpg">
-<meta property="og:image" content="http://p9fx6f3uf.bkt.clouddn.com/chartsize.jpg">
-<meta property="og:updated_time" content="2018-10-13T05:55:19.050Z">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/labcolorspace.png">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/RGB2XYZ.png">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/XYZ2LAB.png">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/labcolorspace1.png">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/Delta-c.png">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/Delta-e.png">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/saturation.png">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/colorcheckspec.png">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/colorcheckbd.png">
+<meta property="og:updated_time" content="2018-10-15T13:30:51.712Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MTF测试图卡规格">
-<meta name="twitter:description" content="标签（空格分隔）： 原创 工作总结 camera  1.Imatest Chart Finder计算图卡大小测试camera MTF时，需要知道所需要的图卡的大小，Imatest提供了一个网页，只要输入sensor的像素，镜头的视场角，还有镜头到图卡的距离就可以得出图卡的大小。网页链接Imatest Chart  Finder。下图为两百万像素sensor，和视场角为74.5度的镜头，最小物距为0">
-<meta name="twitter:image" content="http://p9fx6f3uf.bkt.clouddn.com/chartfinder.jpg">
+<meta name="twitter:title" content="camera测试之颜色还原">
+<meta name="twitter:description" content="标签（空格分隔）： camera测试 工作总结测试目的： camera对色彩的还原能力测试主要设备： 24色色卡，灯箱测试环境： 1.D65/CW/A光源，照度为600±100lux,整个chart表面的亮度值相差小于10%2.D65光源，照度为20lux,整个chart的表面的亮度相差小于15%测试注意事项： 24色卡位于预览画面的中心，大小占整个画面的70%测试原理：在硬件电子系统中，也就是我">
+<meta name="twitter:image" content="http://pgiocha2u.bkt.clouddn.com/labcolorspace.png">
 
 
 
@@ -122,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/28/2018-05-28_MTF_Chart_Size/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/15/2018-10-15_camera测试之颜色还原/"/>
 
 
 
 
 
-  <title>MTF测试图卡规格 | MY BLOG</title>
+  <title>camera测试之颜色还原 | MY BLOG</title>
   
 
 
@@ -235,7 +242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/28/2018-05-28_MTF_Chart_Size/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/15/2018-10-15_camera测试之颜色还原/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="vijing">
@@ -252,7 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">MTF测试图卡规格</h1>
+          <h1 class="post-title" itemprop="name headline">camera测试之颜色还原</h1>
         
 
         <div class="post-meta">
@@ -264,8 +271,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-28T20:14:35+08:00">
-                2018-05-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-15T21:23:20+08:00">
+                2018-10-15
               </time>
             
 
@@ -302,11 +309,10 @@
       
 
       
-        <p>标签（空格分隔）： 原创 工作总结 camera</p>
-<hr>
-<h3 id="1-Imatest-Chart-Finder计算图卡大小"><a href="#1-Imatest-Chart-Finder计算图卡大小" class="headerlink" title="1.Imatest Chart Finder计算图卡大小"></a>1.Imatest Chart Finder计算图卡大小</h3><p>测试camera MTF时，需要知道所需要的图卡的大小，Imatest提供了一个网页，只要输入sensor的像素，镜头的视场角，还有镜头到图卡的距离就可以得出图卡的大小。网页链接<a href="http://www.imatest.com/chartfinder//" target="_blank" rel="noopener">Imatest Chart  Finder</a>。下图为两百万像素sensor，和视场角为74.5度的镜头，最小物距为0.5m的摄像头模组所需的图卡大小为66.28cm*37.28cm<br><img src="http://p9fx6f3uf.bkt.clouddn.com/chartfinder.jpg" alt="image"></p>
-<h3 id="2-通过像素尺寸（Pixel-size），对焦距离，焦距（EFL）计算图卡尺寸"><a href="#2-通过像素尺寸（Pixel-size），对焦距离，焦距（EFL）计算图卡尺寸" class="headerlink" title="2.通过像素尺寸（Pixel size），对焦距离，焦距（EFL）计算图卡尺寸"></a>2.通过像素尺寸（Pixel size），对焦距离，焦距（EFL）计算图卡尺寸</h3><p>根据成像原理可得下图，上面的焦点与被摄物体形成的三角形，下面是焦点与图像传感器形成的三角形，两个三角形相似。这样就可以求出Y值。则图卡的宽度就等于sensor宽度像素点数目乘上Y值，图卡的宽度就等于sensor的长度像素点乘上Y值。<br><img src="http://p9fx6f3uf.bkt.clouddn.com/chartsize.jpg" alt=""></p>
-<p>5/29/2018 11:36:25 PM 写的有点乱~</p>
+        <h2 id="标签（空格分隔）：-camera测试-工作总结"><a href="#标签（空格分隔）：-camera测试-工作总结" class="headerlink" title="标签（空格分隔）： camera测试 工作总结"></a>标签（空格分隔）： camera测试 工作总结</h2><p>测试目的： camera对色彩的还原能力<br>测试主要设备： 24色色卡，灯箱<br>测试环境： 1.D65/CW/A光源，照度为600±100lux,整个chart表面的亮度值相差小于10%<br>2.D65光源，照度为20lux,整个chart的表面的亮度相差小于15%<br>测试注意事项： 24色卡位于预览画面的中心，大小占整个画面的70%<br>测试原理：<br>在硬件电子系统中，也就是我们的摄像头，屏幕中，是使用RGB颜色模型来表示的。但是RGB颜色模型中颜色发生变化过程和人眼对颜色的感应过程不一致。简单来说，对RGB颜色模型来说，假设是8bit的颜色深度，当R颜色通道从0增大到10和从240增大到250，其实对于R颜色通道来说，它们的增量大小是一样的。但是对于人眼来说，从当R颜色通道从0增大到10时，人眼能明显看到他们的变化，但是当R颜色通道从240增大到250时，人眼基本上看不出颜色的变化。所以RGB颜色模型不适合用于色彩还原的测试。<br>先简单介绍一下CIELAB颜色模型，CIELAB颜色模型表示为（L<em>,a</em>,b<em>）,L</em>用于表示明亮度（Luminance）,也是是黑色到白色的变化的位置，范围0～100。a<em>和b</em>表示颜色的变化，a<em>为绿色（green）到紫红色（magenta）间的变化，b</em>表示蓝色（blue）到黄色（yellow）间的变化，范围额-128到+127。3D图如下图所示，其中距离圆心越进饱和度越低。<br><img src="http://pgiocha2u.bkt.clouddn.com/labcolorspace.png" alt="CIELAB颜色模型"><br>对于CIELAB颜色模型，当a<em>从0变化到10和从100变化到110时，人眼能够感觉到一样的颜色变化。也就是说CIELAB的L</em>,a<em>,b</em>的变化量一样，则人眼感受到的颜色变化是一样的。<br>上面所说的就是CIELAB颜色模型具有视觉上的均匀性（perceptually uniform）,所以使用CIELAB颜色模型用于camera颜色还原的测试。<br>RGB颜色模型转CIELAB颜色模型过程：首先先将RGB颜色模型转成CIEXYZ颜色模型，然后CIEXYZ颜色模型再转换成CIELAB颜色模型。具体转换公式如下：<br>RGB &gt;&gt; CIELAB<br><img src="http://pgiocha2u.bkt.clouddn.com/RGB2XYZ.png" alt="RGB2XYZ"><br>CIEXYZ &gt;&gt; CIELAB<br><img src="http://pgiocha2u.bkt.clouddn.com/XYZ2LAB.png" alt="XYZ2LAB"><br>其中X n ，Y n ，Z n一般默認是95.047，100.0，108.883。<br>下一步基于CIELAB颜色模型计算颜色误差和颜色的饱和度（saturation），如下图所示：<br><img src="http://pgiocha2u.bkt.clouddn.com/labcolorspace1.png" alt="CIELAB颜色模型2"><br>用ΔC，ΔE表示色彩正确度误差，如上图所示，左图表示CIELAB颜色模型，右图表示CIELAB颜色模型的一个切面圆。ΔC就是平面圆上两个点的距离。ΔE计算色度差（C）外，还加入明度差。也就是说ΔE表示空间上两个点的距离。一般而言ΔC，ΔE值越小表示越接近真实颜色SRGB，也表示摄像模组的颜色误差越小，颜色越好。ΔC，ΔE计算公式如下：<br><img src="http://pgiocha2u.bkt.clouddn.com/Delta-c.png" alt="Delta-c"><br><img src="http://pgiocha2u.bkt.clouddn.com/Delta-e.png" alt="Delta-e"><br>另外一个测量量就是颜色的饱和度，饱和度指色彩的纯洁性，也叫饱和度或彩度。简单来说，就是颜色越接近黑色或者白色，则饱和度越低。对应到上图的切面圆来说，越靠近圆心则饱和度越低，越靠近圆环饱和度月高。饱和度计算公式如下：<br><img src="http://pgiocha2u.bkt.clouddn.com/saturation.png" alt="饱和度"></p>
+<p>判断标准：<br><img src="http://pgiocha2u.bkt.clouddn.com/colorcheckspec.png" alt="颜色还原判断标准"></p>
+<p>算法系统框图：<br><img src="http://pgiocha2u.bkt.clouddn.com/colorcheckbd.png" alt="算法框图"></p>
+<p>　　</p>
 
       
     </div>
@@ -331,8 +337,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/26/2018-05-26_camera_base_knowledge/" rel="next" title="研究Camera需要学习的知识">
-                <i class="fa fa-chevron-left"></i> 研究Camera需要学习的知识
+              <a href="/2018/10/14/2018-10-14_Camera MTF测试/" rel="next" title="Camera MTF测试">
+                <i class="fa fa-chevron-left"></i> Camera MTF测试
               </a>
             
           </div>
@@ -340,10 +346,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/29/2018-05-29_vim/" rel="prev" title="Vim使用">
-                Vim使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -461,7 +463,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Imatest-Chart-Finder计算图卡大小"><span class="nav-number">1.</span> <span class="nav-text">1.Imatest Chart Finder计算图卡大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-通过像素尺寸（Pixel-size），对焦距离，焦距（EFL）计算图卡尺寸"><span class="nav-number">2.</span> <span class="nav-text">2.通过像素尺寸（Pixel size），对焦距离，焦距（EFL）计算图卡尺寸</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#标签（空格分隔）：-camera测试-工作总结"><span class="nav-number">1.</span> <span class="nav-text">标签（空格分隔）： camera测试 工作总结</span></a></li></ol></div>
             
 
           </div>

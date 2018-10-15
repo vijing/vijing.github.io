@@ -232,6 +232,132 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/28/2018-07-28_framebuffer简单应用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vijing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/test.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MY BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/28/2018-07-28_framebuffer简单应用/" itemprop="url">frame buffer简单应用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-28T00:01:39+08:00">
+                2018-07-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>标签（空格分隔）： LCD</p>
+<hr>
+<p>现在我们要在LCD上画一个点，我们无法直接对LCD屏进行操作。这时候就需要用到FrameBuffer,Linux可以FrameBuffer这个设备来供用<br>户态进程实现直接写屏。<br>首先我们先简单看一下linux的架构图：</p>
+<hr>
+<p><img src="http://tingge.github.io/img/linux_kernel.jpg" alt="linux系统结构"></p>
+<hr>
+<p>用户程序无法直接操作硬件，frame buffer相当于一个中间人，接受用户程序送过来的数据，然后把数据显示在LCD上。<br>注：framebuffer的设备文件一般是 /dev/fb0、/dev/fb1等，所有的这些操作，都是在控制台界面下，root登录<br>可参考下列链接：<br><a href="http://www.wxtlife.com/2017/06/07/Android-framebuffer/" title="framebuffer介绍" target="_blank" rel="noopener">http://www.wxtlife.com/2017/06/07/Android-framebuffer/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/21/2018-07-21_Python批量修改寄存器的值/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1337,7 +1463,7 @@ Name_B    80
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
