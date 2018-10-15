@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="标签（空格分隔）： camera，原创总结  图像传感器（image sensor）是将光信号转换成电信号的器件。常见的类型可分为CCD和CMOS，今天我们就聊聊CCD和CMOS的区别和联系。首先，我们先了解一下什么是CCD和CMOS,CCD（charge-coupled device）就是感光耦合元件，CMOS（CMOS Active pixel sensor）互补式金属氧化物半导体有源像素传感">
+<meta name="description" content="标签（空格分隔）： camera测试 工作总结 MTF  1.MTF介绍MTF（Modulation Transfer Function）模量传递函数。MTF是camera成像对比度和分辨率的综合表现。MTF反映的是镜头对被拍摄物体的再现能力。从另一个角度来看，camera成像过程可以简单看成下图：简单来，物体经过camera系统之后形成图象。我们用Io表示物体表面的最大亮度与最小亮度的差，Ii表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CCD和CMOS的区别">
-<meta property="og:url" content="http://yoursite.com/2018/10/13/title_ CCD和CMOS的区别/index.html">
+<meta property="og:title" content="Camera MTF测试">
+<meta property="og:url" content="http://yoursite.com/2018/10/14/2018-10-14_Camera MTF测试/index.html">
 <meta property="og:site_name" content="MY BLOG">
-<meta property="og:description" content="标签（空格分隔）： camera，原创总结  图像传感器（image sensor）是将光信号转换成电信号的器件。常见的类型可分为CCD和CMOS，今天我们就聊聊CCD和CMOS的区别和联系。首先，我们先了解一下什么是CCD和CMOS,CCD（charge-coupled device）就是感光耦合元件，CMOS（CMOS Active pixel sensor）互补式金属氧化物半导体有源像素传感">
+<meta property="og:description" content="标签（空格分隔）： camera测试 工作总结 MTF  1.MTF介绍MTF（Modulation Transfer Function）模量传递函数。MTF是camera成像对比度和分辨率的综合表现。MTF反映的是镜头对被拍摄物体的再现能力。从另一个角度来看，camera成像过程可以简单看成下图：简单来，物体经过camera系统之后形成图象。我们用Io表示物体表面的最大亮度与最小亮度的差，Ii表">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-13T07:49:42.082Z">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/MTF%E7%89%A9%E5%83%8F%E5%9B%BE.png">
+<meta property="og:image" content="http://pgiocha2u.bkt.clouddn.com/MTFTest1.png">
+<meta property="og:updated_time" content="2018-10-15T12:58:10.853Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CCD和CMOS的区别">
-<meta name="twitter:description" content="标签（空格分隔）： camera，原创总结  图像传感器（image sensor）是将光信号转换成电信号的器件。常见的类型可分为CCD和CMOS，今天我们就聊聊CCD和CMOS的区别和联系。首先，我们先了解一下什么是CCD和CMOS,CCD（charge-coupled device）就是感光耦合元件，CMOS（CMOS Active pixel sensor）互补式金属氧化物半导体有源像素传感">
+<meta name="twitter:title" content="Camera MTF测试">
+<meta name="twitter:description" content="标签（空格分隔）： camera测试 工作总结 MTF  1.MTF介绍MTF（Modulation Transfer Function）模量传递函数。MTF是camera成像对比度和分辨率的综合表现。MTF反映的是镜头对被拍摄物体的再现能力。从另一个角度来看，camera成像过程可以简单看成下图：简单来，物体经过camera系统之后形成图象。我们用Io表示物体表面的最大亮度与最小亮度的差，Ii表">
+<meta name="twitter:image" content="http://pgiocha2u.bkt.clouddn.com/MTF%E7%89%A9%E5%83%8F%E5%9B%BE.png">
 
 
 
@@ -119,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/13/title_ CCD和CMOS的区别/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/14/2018-10-14_Camera MTF测试/"/>
 
 
 
 
 
-  <title>CCD和CMOS的区别 | MY BLOG</title>
+  <title>Camera MTF测试 | MY BLOG</title>
   
 
 
@@ -232,7 +235,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/13/title_ CCD和CMOS的区别/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/14/2018-10-14_Camera MTF测试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="vijing">
@@ -249,7 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CCD和CMOS的区别</h1>
+          <h1 class="post-title" itemprop="name headline">Camera MTF测试</h1>
         
 
         <div class="post-meta">
@@ -261,8 +264,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-13T15:50:24+08:00">
-                2018-10-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-14T01:52:46+08:00">
+                2018-10-14
               </time>
             
 
@@ -299,9 +302,21 @@
       
 
       
-        <p>标签（空格分隔）： camera，原创总结</p>
+        <p>标签（空格分隔）： camera测试 工作总结 MTF</p>
 <hr>
-<p>图像传感器（image sensor）是将光信号转换成电信号的器件。常见的类型可分为CCD和CMOS，今天我们就聊聊CCD和CMOS的区别和联系。<br>首先，我们先了解一下什么是CCD和CMOS,CCD（charge-coupled device）就是感光耦合元件，CMOS（CMOS Active pixel sensor）互补式金属氧化物半导体有源像素传感器（CMOS Active pixel sensor）。按照我的理解，CCD和CMOS的结构不同是CCD和CMOS有明显区别的根本原因。<br>我们将sensor将光信号转换成电信号的过程比喻成在下雨天时我们要存储雨水的过程。要存储1平方米区域内天下落下的雨水，对于CCD，存储雨水的方法用一个长宽为1m的桶去接水；而对于CMOS，存储雨水的方法就是使用100个长宽为0.01m的小桶排成1平方米大小的区域去接水。根据这样的结构，我们可以简单分析一下CCD和CMOS的区别。能够使用长宽为1m的桶的都是大户人家（CCD更贵，一般用于高档相机），而且要一次搬完长宽为1m桶的水（只需要一次放大）,需要更多的人力（更耗电）。但是大桶可以存储更多的水（CCD的成像质量更好）。与之对应，CMOS工艺要求没有CCD高，会比较便宜，一般用于低端产品。而且CMOS有数以百万的放大器的不一致性却带来了更高的固定噪声，是CMOS相对CCD的固有劣势。</p>
+<h3 id="1-MTF介绍"><a href="#1-MTF介绍" class="headerlink" title="1.MTF介绍"></a>1.MTF介绍</h3><p>MTF（Modulation Transfer Function）模量传递函数。MTF是camera成像对比度和分辨率的综合表现。MTF反映的是镜头对被拍摄物体的再现能力。从另一个角度来看，camera成像过程可以简单看成下图：<br><img src="http://pgiocha2u.bkt.clouddn.com/MTF%E7%89%A9%E5%83%8F%E5%9B%BE.png" alt="MTF物像图"><br>简单来，物体经过camera系统之后形成图象。我们用Io表示物体表面的最大亮度与最小亮度的差，Ii表示图象最大亮度与最小亮度之差。那么MTF表征的量就是Ii/Io,如果是理想情况下，Ii等于Io, MTF的值就是等于1，但是在实际的成像系统中，这个是不可能发生的。同样的，在成像系统中，Ii的值不可能为0。所以说，MTF的值的范围为0～1.</p>
+<h3 id="2-camera-MTF测试方法"><a href="#2-camera-MTF测试方法" class="headerlink" title="2.camera MTF测试方法"></a>2.camera MTF测试方法</h3><p>一般来说，MTF测试的方法分为：</p>
+<ul>
+<li><p>1.用人眼来看，人眼来看的方法就是camera拍摄12233</p>
+<p>chart得到的图片中的黑白线对，看人眼可以辨识黑白线对的极限。这部分就不具体介绍了。</p>
+</li>
+<li><p>2.按照MTF的定义也就是最大亮度值减最小亮度值的差来求camera的MTF值。</p>
+</li>
+</ul>
+<p>具体如下：<br><img src="http://pgiocha2u.bkt.clouddn.com/MTFTest1.png" alt="MTF测试第一种方法"><br>使用上图做为camera拍摄的图卡，其中图中灰色部分为灰度值为0和灰度值为255的象素点间隔组成的图象。然后取红框部分区域进行计算，红框大小可根据实际情况来取。<br>计算公式：$$(Lmax-Lmin)/(Lmax+Lmin)$$，其中L为灰度值。通过这个公司就可以求出五个区域的MTF值。这种方法算法实现简单，但是误差会比较大。</p>
+<ul>
+<li>3.SFR方法<br>SFR(spatial frequency response)空间频率响是MTF的一种测试算法。 这次先简单介绍一下SFR的流程和怎样在Matheamtica实现，以后有时间再具体介绍其中的原理。<br>。。。未完成</li>
+</ul>
 
       
     </div>
@@ -326,8 +341,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/13/title_ 电子制造业常用英语/" rel="next" title="电子制造业常用英语">
-                <i class="fa fa-chevron-left"></i> 电子制造业常用英语
+              <a href="/2018/10/13/title_ CCD和CMOS的区别/" rel="next" title="CCD和CMOS的区别">
+                <i class="fa fa-chevron-left"></i> CCD和CMOS的区别
               </a>
             
           </div>
@@ -335,10 +350,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/14/2018-10-14_Camera MTF测试/" rel="prev" title="Camera MTF测试">
-                Camera MTF测试 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -390,8 +401,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -437,6 +457,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-MTF介绍"><span class="nav-number">1.</span> <span class="nav-text">1.MTF介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-camera-MTF测试方法"><span class="nav-number">2.</span> <span class="nav-text">2.camera MTF测试方法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
